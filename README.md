@@ -33,7 +33,9 @@ Windows, Linux and Mac OSX.
 
 ## Reporting issues
 
-Issues can be reported via the [Github issue tracker](https://github.com/TrinityCore/TrinityCore/issues?labels=Branch-3.3.5a).
+Issues can be reported via the
+Баг-репорт можно написать тут:
+[Github issue tracker](https://github.com/DraenorCore/DraenorCore/issues).
 
 Please take the time to review existing issues before submitting your own to
 prevent duplicates.
