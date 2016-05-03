@@ -1027,9 +1027,7 @@ public:
 
         bool Validate(SpellInfo const* /*spellInfo*/) override
         {
-            if (!sSpellMgr->GetSpellInfo(SPELL_HUNTER_CAMOUFLAGE))
-                return false;
-            return true;
+            return sSpellMgr->GetSpellInfo(SPELL_HUNTER_CAMOUFLAGE);
         }
 
         void HandleDummy(SpellEffIndex /*effIndex*/)
