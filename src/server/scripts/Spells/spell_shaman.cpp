@@ -277,12 +277,9 @@ public:
     {
         PrepareSpellScript(spell_sha_elemental_blast_SpellScript);
 
-        static TRINITY_CONSTEXPR uint32 EnhancementBuffCount = std::extent<decltype(ElementalBlastBuffSpells)>::value;
-        static TRINITY_CONSTEXPR uint32 BuffCount = EnhancementBuffCount - 1;
-
         bool Validate(SpellInfo const* /*spellInfo*/) override
         {
-            for (uint32 i = 0; i < EnhancementBuffCount; ++i)
+            for (uint32 i = 0; i < 5; ++i)
                 if (!sSpellMgr->GetSpellInfo(ElementalBlastBuffSpells[i]))
                     return false;
             if (!sSpellMgr->GetSpellInfo(SPELL_SHAMAN_ELEMENTAL_BLAST_SPIRIT))
@@ -298,7 +295,7 @@ public:
         void TriggerBuff()
         {
             Player* caster = GetCaster()->ToPlayer();
-            uint32 possbleSpells = (caster->GetSpecId(caster->GetActiveTalentGroup()) == TALENT_SPEC_SHAMAN_ENHANCEMENT ? EnhancementBuffCount : BuffCount) - 1;
+            uint32 possbleSpells = (caster->GetSpecId(caster->GetActiveTalentGroup()) == TALENT_SPEC_SHAMAN_ENHANCEMENT ? 5 : 4) - 1;
             caster->CastSpell(caster, ElementalBlastBuffSpells[urand(0, possbleSpells)], TRIGGERED_FULL_MASK);
             if (caster->GetSpecId(caster->GetActiveTalentGroup()) == TALENT_SPEC_SHAMAN_RESTORATION)
                 caster->CastSpell(caster, SPELL_SHAMAN_ELEMENTAL_BLAST_SPIRIT, TRIGGERED_FULL_MASK);
