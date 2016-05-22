@@ -52,12 +52,12 @@ char const* GitRevision::GetFullVersion()
 {
 #if PLATFORM == PLATFORM_WINDOWS
 # ifdef _WIN64
-    return _PACKAGENAME " rev. " VER_PRODUCTVERSION_STR " (Win64, " _BUILD_DIRECTIVE ")";
+    return _PACKAGENAME " Forked from TrinityCore (Win64, " _BUILD_DIRECTIVE ")";
 # else
-    return _PACKAGENAME " 20.05.2016 (Win32, " _BUILD_DIRECTIVE ")";
+    return _PACKAGENAME " Forked from TrinityCore (Win32, " _BUILD_DIRECTIVE ")";
 # endif
 #else
-    return _PACKAGENAME " rev. " VER_PRODUCTVERSION_STR " (Unix, " _BUILD_DIRECTIVE ")";
+    return _PACKAGENAME " Forked from TrinityCore (Unix, " _BUILD_DIRECTIVE ")";
 #endif
 }
 
