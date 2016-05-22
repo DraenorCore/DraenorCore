@@ -1,22 +1,18 @@
-**Description**:
+**Description (Описание)**:
 
-**Current behaviour**: Tell us what happens
+**Current behaviour**: Tell us what happens (Как работает на данный момент)
 
-**Expected behaviour**: Tell us what should happen instead
+**Expected behaviour**: Tell us what should happen instead (Как должно работать)
 
-**Steps to reproduce the problem**:
+**Steps to reproduce the problem** (Что необходимо сделать, чтоб повторить проблему):
 
 1. 
 2. 
 3. 
 
-**Branch(es)**: 335/6x  
+**Hash/commit** (Последнее исправление):  
 
-**TC hash/commit**:  
-
-**TDB version**:  
-
-**Operating system**:  
+**Operating system** (Операционная система):  
 
 
 [//]: # (This template is for problem reports, for other type of reports edit it accordingly)
