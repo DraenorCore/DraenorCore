@@ -46,7 +46,7 @@ char const* GitRevision::GetHotfixesDatabase()
     return _HOTFIXES_DATABASE;
 }
 
-#define _PACKAGENAME "TrinityCore"
+#define _PACKAGENAME "DraenorCore"
 
 char const* GitRevision::GetFullVersion()
 {
@@ -54,7 +54,7 @@ char const* GitRevision::GetFullVersion()
 # ifdef _WIN64
     return _PACKAGENAME " rev. " VER_PRODUCTVERSION_STR " (Win64, " _BUILD_DIRECTIVE ")";
 # else
-    return _PACKAGENAME " rev. " VER_PRODUCTVERSION_STR " (Win32, " _BUILD_DIRECTIVE ")";
+    return _PACKAGENAME " 20.05.2016 (Win32, " _BUILD_DIRECTIVE ")";
 # endif
 #else
     return _PACKAGENAME " rev. " VER_PRODUCTVERSION_STR " (Unix, " _BUILD_DIRECTIVE ")";
